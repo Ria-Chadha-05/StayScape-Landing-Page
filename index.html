@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayScape - Book Unique Homes & Experiences</title>
+    <link rel="stylesheet" href="css/main.css">
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Flandingpa1407back.builtwithrocket.new&_be=https%3A%2F%2Fappanalytics.rocket.new&_v=0.1.17"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body class="bg-white text-gray-900 antialiased">
+    
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 animate-fade-in">
+        <div class="max-w-[1760px] mx-auto px-6 lg:px-20">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2 group">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2C16 2 6 8 6 16C6 20 8 24 12 26C14 27 16 28 16 30C16 28 18 27 20 26C24 24 26 20 26 16C26 8 16 2 16 2Z" fill="#FF385C"/>
+                        <path d="M16 12C14.9 12 14 12.9 14 14V18C14 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18V14C18 12.9 17.1 12 16 12Z" fill="white"/>
+                    </svg>
+                    <span class="text-xl font-bold text-coral-500 tracking-tight">StayScape</span>
+                </a>
+
+                <!-- Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#" class="nav-link active">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                        <span>Stays</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        <span>Experiences</span>
+                        <span class="badge-new">New</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Online Experiences</span>
+                    </a>
+                </nav>
+
+                <!-- Right Actions -->
+                <div class="flex items-center gap-4">
+                    <button class="hidden lg:flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-full transition-colors">
+                        Become a Host
+                    </button>
+                    <button class="p-2 hover:bg-gray-50 rounded-full transition-colors">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                    </button>
+                    <button class="flex items-center gap-3 px-3 py-2 border border-gray-300 rounded-full hover:shadow-md transition-all">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="12" x2="21" y2="12"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <line x1="3" y1="18" x2="21" y2="18"/>
+                        </svg>
+                        <div class="w-7 h-7 bg-gray-700 rounded-full flex items-center justify-center">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Search -->
+    <section class="relative pt-8 pb-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-[1760px] mx-auto px-6 lg:px-20">
+            <!-- Search Bar -->
+            <div class="search-container animate-slide-up">
+                <div class="search-section">
+                    <label class="search-label">Where</label>
+                    <input type="text" placeholder="Search destinations" class="search-input">
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-section">
+                    <label class="search-label">Check in</label>
+                    <input type="text" placeholder="Add dates" class="search-input">
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-section">
+                    <label class="search-label">Check out</label>
+                    <input type="text" placeholder="Add dates" class="search-input">
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-section flex-1">
+                    <label class="search-label">Who</label>
+                    <input type="text" placeholder="Add guests" class="search-input">
+                </div>
+                <button class="search-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                    <span>Search</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section class="py-12 scroll-section">
+        <div class="max-w-[1760px] mx-auto px-6 lg:px-20">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="section-title">
+                    Popular stays in Mumbai
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="inline ml-2">
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                        <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                </h2>
+                <div class="flex gap-2">
+                    <button class="scroll-nav-btn" onclick="scrollCards('popular', -1)">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"/>
+                        </svg>
+                    </button>
+                    <button class="scroll-nav-btn" onclick="scrollCards('popular', 1)">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="property-scroll" id="popular">
+                <!-- Property Card 1 -->
+                <div class="property-card">
+                    <div class="property-image-container">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1716ff18f-1765306666752.png" alt="Luxury apartment with city view in South Mumbai featuring modern interiors and floor-to-ceiling windows" class="property-image">
+                        <button class="favorite-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                        <div class="guest-favorite-badge">Guest favourite</div>
+                    </div>
+                    <div class="property-details">
+                        <div class="flex items-start justify-between mb-1">
+                            <h3 class="property-title">Apartment in South Mumbai</h3>
+                            <div class="property-rating">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                <span>4.96</span>
+                            </div>
+                        </div>
+                        <p class="property-description">City views · WiFi · Kitchen</p>
+                        <p class="property-dates">Feb 15 – 20</p>
+                        <p class="property-price"><span class="font-semibold">₹8,500</span> night</p>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card">
+                    <div class="property-image-container">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1202a4d26-1768164932553.png" alt="Cozy studio apartment in Bandra with bohemian decor and private balcony overlooking the Arabian Sea" class="property-image">
+                        <button class="favorite-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                        <div class="guest-favorite-badge">Guest favourite</div>
+                    </div>
+                    <div class="property-details">
+                        <div class="flex items-start justify-between mb-1">
+                            <h3 class="property-title">Studio in Bandra West</h3>
+                            <div class="property-rating">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                <span>4.89</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Beach access · Balcony · Workspace</p>
+                        <p class="property-dates">Feb 18 – 23</p>
+                        <p class="property-price"><span class="font-semibold">₹6,200</span> night</p>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card">
+                    <div class="property-image-container">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_13b9e8a0c-1766153332208.png" alt="Spacious 2-bedroom flat in Powai with lake views, modern amenities and dedicated workspace" class="property-image">
+                        <button class="favorite-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                        <div class="guest-favorite-badge">Guest favourite</div>
+                    </div>
+                    <div class="property-details">
+                        <div class="flex items-start justify-between mb-1">
+                            <h3 class="property-title">Flat in Powai</h3>
+                            <div class="property-rating">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                <span>4.92</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Lake views · 2 bedrooms · Pool</p>
+                        <p class="property-dates">Feb 12 – 17</p>
+                        <p class="property-price"><span class="font-semibold">₹12,400</span> night</p>
+                    </div>
+                </div>
+
+                <!-- Property Card 4 -->
+                <div class="property-card">
+                    <div class="property-image-container">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1ab2f83cb-1768374336526.png" alt="Elegant penthouse in Worli with panoramic sea views, luxury furnishings and rooftop terrace" class="property-image">
+                        <button class="favorite-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                        <div class="guest-favorite-badge">Guest favourite</div>
+                    </div>
+                    <div class="property-details">
+                        <div class="flex items-start justify-between mb-1">
+                            <h3 class="property-title">Penthouse in Worli</h3>
+                            <div class="property-rating">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Sea views · Terrace · Luxury</p>
+                        <p class="property-dates">Feb 20 – 25</p>
+                        <p class="property-price"><span class="font-semibold">₹18,900</span> night</p>
+                    </div>
+                </div>
+
+                <!-- Property Card 5 -->
+                <div class="property-card">
+                    <div class="property-image-container">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1d121f06c-1768286813215.png" alt="Charming heritage home in Colaba with vintage architecture, garden and proximity to Gateway of India" class="property-image">
+                        <button class="favorite-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="property-details">
+                        <div class="flex items-start justify-between mb-1">
+                            <h3 class="property-title">Heritage home in Colaba</h3>
+                            <div class="property-rating">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                <span>4.87</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Historic · Garden · Central</p>
+                        <p class="property-dates">Feb 10 – 15</p>
+                        <p class="property-price"><span class="font-semibold">₹9,800</span> night</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Destinations Section -->
+    <section class="py-12 scroll-section">
+        <div class="max-w-[1760px] mx-auto px-6 lg:px-20">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="section-title">
+                    Available in Goa this weekend
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="inline ml-2">
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                        <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                </h2>
+                <div class="flex gap-2">
+                    <button class="scroll-nav-btn" onclick="scrollCards('trending', -1)">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"/>
+                        </svg>
+                    </button>
+                    <button class="scroll-nav-btn" onclick="scrollCards('trending', 1)">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="property-scroll" id="trending">
+                <!-- Property Card 1 -->
+                <div class="property-card">
+                    <div class="property-image-container">
+                        <img src="https://images.unsplash.com/photo-1691272477702-0a2edae135f2" alt="Beachfront villa in North Goa with private pool, palm trees and stunning sunset views over the Arabian Sea" class="property-image">
+                        <button class="favorite-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                        <div class="guest-favorite-badge">Guest favourite</div>
+                    </div>
+                    <div class="property-details">
+                        <div class="flex items-start justify-between mb-1">
+                            <h3 class="property-title">Villa in North Goa</h3>
+                            <div class="property-rating">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                <span>4.94</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Beach access · Pool · 3 bedrooms</p>
+                        <p class="property-dates">Feb 9 – 11</p>
+                        <p class="property-price"><span class="font-semibold">₹15,600</span> night</p>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card">
+                    <div class="property-image-container">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1dd6ec6f8-1769228547723.png" alt="Rustic Portuguese cottage in Panjim with colorful facade, traditional tiles and courtyard garden" class="property-image">
+                        <button class="favorite-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                        <div class="guest-favorite-badge">Guest favourite</div>
+                    </div>
+                    <div class="property-details">
+                        <div class="flex items-start justify-between mb-1">
+                            <h3 class="property-title">Cottage in Panjim</h3>
+                            <div class="property-rating">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                <span>4.98</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Historic · Courtyard · Central</p>
+                        <p class="property-dates">Feb 9 – 11</p>
+                        <p class="property-price"><span class="font-semibold">₹7,800</span> night</p>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card">
+                    <div class="property-image-container">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_179314f77-1767024627023.png" alt="Modern apartment in Candolim with sea view balcony, contemporary design and walking distance to beach" class="property-image">
+                        <button class="favorite-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="property-details">
+                        <div class="flex items-start justify-between mb-1">
+                            <h3 class="property-title">Apartment in Candolim</h3>
+                            <div class="property-rating">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                <span>4.91</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Sea views · WiFi · Balcony</p>
+                        <p class="property-dates">Feb 9 – 11</p>
+                        <p class="property-price"><span class="font-semibold">₹5,400</span> night</p>
+                    </div>
+                </div>
+
+                <!-- Property Card 4 -->
+                <div class="property-card">
+                    <div class="property-image-container">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_15074b4ab-1767392482431.png" alt="Luxury resort suite in South Goa with infinity pool, spa access and direct beach access" class="property-image">
+                        <button class="favorite-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                        <div class="guest-favorite-badge">Guest favourite</div>
+                    </div>
+                    <div class="property-details">
+                        <div class="flex items-start justify-between mb-1">
+                            <h3 class="property-title">Resort in South Goa</h3>
+                            <div class="property-rating">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Luxury · Spa · Beach access</p>
+                        <p class="property-dates">Feb 9 – 11</p>
+                        <p class="property-price"><span class="font-semibold">₹22,500</span> night</p>
+                    </div>
+                </div>
+
+                <!-- Property Card 5 -->
+                <div class="property-card">
+                    <div class="property-image-container">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_11924fe4a-1770559285388.png" alt="Cozy bungalow in Arambol with bohemian vibes, hammock garden and steps from the beach" class="property-image">
+                        <button class="favorite-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="property-details">
+                        <div class="flex items-start justify-between mb-1">
+                            <h3 class="property-title">Bungalow in Arambol</h3>
+                            <div class="property-rating">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                                <span>4.88</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Bohemian · Garden · Beach nearby</p>
+                        <p class="property-dates">Feb 9 – 11</p>
+                        <p class="property-price"><span class="font-semibold">₹4,200</span> night</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-16 bg-gray-50 scroll-section">
+        <div class="max-w-[1760px] mx-auto px-6 lg:px-20">
+            <h2 class="section-title mb-12">Explore by category</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Category 1 -->
+                <div class="category-card group">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Amazing views</h3>
+                    <p class="category-description">Breathtaking panoramas</p>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="category-card group">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Beachfront</h3>
+                    <p class="category-description">Steps from the shore</p>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="category-card group">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Unique stays</h3>
+                    <p class="category-description">One-of-a-kind spaces</p>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="category-card group">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Trending</h3>
+                    <p class="category-description">Popular right now</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-[1760px] mx-auto px-6 lg:px-20">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1 -->
+                <div>
+                    <h4 class="font-semibold text-sm mb-4">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">Safety information</a></li>
+                        <li><a href="#" class="footer-link">Cancellation options</a></li>
+                        <li><a href="#" class="footer-link">Our COVID-19 Response</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="font-semibold text-sm mb-4">Community</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link">Disaster relief housing</a></li>
+                        <li><a href="#" class="footer-link">Support Afghan refugees</a></li>
+                        <li><a href="#" class="footer-link">Combating discrimination</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="font-semibold text-sm mb-4">Hosting</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link">Try hosting</a></li>
+                        <li><a href="#" class="footer-link">Host an experience</a></li>
+                        <li><a href="#" class="footer-link">Responsible hosting</a></li>
+                        <li><a href="#" class="footer-link">Resource Center</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="font-semibold text-sm mb-4">About</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link">Newsroom</a></li>
+                        <li><a href="#" class="footer-link">Learn about new features</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-6 text-sm text-gray-600">
+                    <span>© 2026 StayScape, Inc.</span>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">Sitemap</a>
+                </div>
+                <div class="flex items-center gap-6">
+                    <button class="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                        English (US)
+                    </button>
+                    <button class="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900">
+                        ₹ INR
+                    </button>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-600 hover:text-gray-900">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -10% 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Horizontal scroll function
+        function scrollCards(sectionId, direction) {
+            const container = document.getElementById(sectionId);
+            const scrollAmount = 400;
+            container.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        // Favorite button toggle
+        document.querySelectorAll('.favorite-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.classList.toggle('active');
+                const svg = this.querySelector('svg');
+                const path = svg.querySelector('path');
+                
+                if (this.classList.contains('active')) {
+                    path.setAttribute('fill', '#FF385C');
+                } else {
+                    path.setAttribute('fill', 'none');
+                }
+            });
+        });
+
+        // Search input focus effects
+        document.querySelectorAll('.search-input').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.closest('.search-section').classList.add('focused');
+            });
+            
+            input.addEventListener('blur', function() {
+                this.closest('.search-section').classList.remove('focused');
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>
