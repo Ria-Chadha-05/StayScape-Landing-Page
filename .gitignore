@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Dependency folders
+node_modules/
+
+# Environment variables
+.env
+
+# Build folders
+dist/
+build/
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.tmp
+*.swp
