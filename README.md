@@ -65,10 +65,11 @@ StayScape
 
 ## 📸 Preview
 
-<img width="1470" height="923" alt="Screenshot" src="https://github.com/user-attachments/assets/2f2ea059-c2d0-4eac-a35c-334f1ae67292" />
-
-<img width="1470" height="923" alt="Screenshot" src="https://github.com/user-attachments/assets/09091174-8aa3-42ce-843b-26b7a4aef678" />
-
+<p align="center">
+  <a href="https://youtu.be/gKqb9S15fro">
+    <img src="https://img.youtube.com/vi/gKqb9S15fro/maxresdefault.jpg" width="800">
+  </a>
+</p>
 
 ---
 
