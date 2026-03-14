@@ -69,6 +69,7 @@ StayScape
 
 <img width="1470" height="923" alt="Screenshot" src="https://github.com/user-attachments/assets/09091174-8aa3-42ce-843b-26b7a4aef678" />
 
+
 ---
 
 ## ⚙️ Installation & Setup
